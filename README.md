@@ -41,5 +41,3 @@ Parsing/Matching	spaCy, SentenceTransformers
 Email Integration	smtplib, email
 
 Resume Processing	PyMuPDF, pdfminer
-
-Deployment	Uvicorn, local server (demo mode)
