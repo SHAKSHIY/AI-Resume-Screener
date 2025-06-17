@@ -1,43 +1,150 @@
-# AI Resume Screening Chatbot
-An intelligent resume screening assistant that helps HR professionals quickly shortlist top candidates, score resumes based on job descriptions, and manage initial communications. Built for efficiency, accuracy, and flexibility in the hiring process.
+# 🧠 AI Resume Screener
 
-## Overview
-Hiring the right talent is critical—and time-consuming. This AI-powered chatbot automates the initial screening process using NLP and scoring algorithms, saving HR teams countless hours while improving candidate matching accuracy.
+An AI-powered tool to help HR teams upload, screen, and shortlist candidate resumes automatically — complete with analytics, chatbot interface, and email integration.
 
-## Features
-🔹 Multiple Resume Uploads
 
-Easily upload multiple resumes (PDF format supported) for bulk processing.
+---
 
-🔹 Dynamic Resume Scoring
+## 🚀 Demo
 
-Resumes are scored against a provided job description using NLP and embedding-based techniques.
+[Watch Demo on Loom](https://www.loom.com/share/476e8adfa5e7484fafdac7f6a683f1ea?sid=99c6bdad-b895-4e0e-961d-274729a6d4f6)
 
-🔹 Custom Weightage System
 
-HRs can assign dynamic weightage (out of 100) to various factors like skills, experience, education, etc.
 
-🔹 Cut-Off Based Shortlisting
+---
 
-Automatically shortlists candidates who score above a configurable threshold.
+## 📌 Problem Statement
 
-🔹 Email Invitations to Selected Candidates
+Build a chatbot to screen resumes, shortlist top candidates, and manage initial interactions.
+---
 
-Send interview invitations to selected candidates via checkbox-based selection.
+## 🛠 Tech Stack
 
-🔹 Interactive Chatbot Interface
+### 🖥 Frontend
 
-Ask the bot about a candidate's skills, email, or experience. It responds contextually using extracted data.
+React.js – Interactive UI and chatbot interface
 
-## Tech Stack
-Layer	Tools/Technologies
+Tailwind CSS – Styling and layout
 
-Frontend	HTML, CSS, JavaScript (Vanilla/Bootstrap)
+EmailJS – Send email invites directly from the frontend
 
-Backend	FastAPI (Python)
+Chart.js + react-chartjs-2 – Data visualization for resume analytics
 
-Parsing/Matching	spaCy, SentenceTransformers
 
-Email Integration	smtplib, email
+### 🧠 Backend
 
-Resume Processing	PyMuPDF, pdfminer
+Python – Resume parsing & matching logic
+
+Flask – RESTful backend for handling resume & JD processing
+
+spaCy – Custom-trained NLP model for extracting key sections (NER)
+
+scikit-learn – Resume scoring based on similarity
+
+PyPDF2 / python-docx – Reading resumes in PDF and DOCX formats
+
+pandas – For data handling and scoring logic
+
+
+
+---
+
+## 📄 Features
+
+### ✅ 1. Multi-Resume Upload
+
+Upload multiple resumes (PDF/DOCX)
+
+Automatically parses and stores resume details
+
+
+### 🧠 2. NLP-Based Resume Parsing
+
+Custom-trained spaCy model
+
+Extracts: Name, Education, Experience, Skills
+
+
+### 📝 3. Job Description Parsing
+
+Paste or type JD dynamically
+
+Extracts required skills, education, and experience
+
+
+### ⚖ 4. Resume Scoring System
+
+Weighted scoring based on skill/edu/exp match
+
+Custom weightage input by HR (out of 100)
+
+
+### 💬 5. AI Chatbot Interface
+
+Interact with the tool via chatbot
+
+View top candidates, shortlist, and invite via email
+
+
+### 📧 6. Email Integration
+
+Select and send personalized invites to candidates
+
+
+### 📊 7. Resume Analytics Dashboard
+
+Total resumes processed
+
+Score distribution, skill frequency, cutoff %
+
+
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+Node.js (for frontend)
+
+Python 3.8+
+
+spaCy + scikit-learn + pandas
+
+
+### ⚙ Frontend Setup
+
+cd frontend
+npm install
+npm run dev
+
+### 🔧 Backend Setup
+
+cd backend
+python app.py
+
+
+---
+
+## 🧪 Future Scope
+
+Voicebot version of the chatbot
+
+PDF export of shortlist reports
+
+Integration with ATS systems
+
+Candidate feedback scoring
+
+
+
+---
+
+## 🤝 Authors
+
+Sakshi Kumari
+
+Shakshi Yadav
+
+
+
